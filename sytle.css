@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+.custom-container {
+  max-width: 100%;
+  /* height: 100vh; */
+  margin: auto;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-top: 70px;
+}
+
+.profile > img {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #222;
+  border-radius: 100%;
+}
+
+.profile > p {
+  font-size: 1.8em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #222;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.link {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.link > a {
+  text-decoration: none;
+  color: #222;
+  font-size: 24px;
+  text-align: center;
+  border: 3px solid #222;
+  border-radius: 7px;
+  background-color: aliceblue;
+  margin: 5px auto;
+  padding: 10px;
+  transition: all 0.3s ease;
+  max-width: 400px;
+  width: 100%;  
+}
+
+.link > a:hover {
+  background-color: antiquewhite;
+  transform: scale(1.05);
+}
+
+.link-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 10px 40px;
+  text-decoration: none;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  margin: 8px auto;
+  color: #000;
+  max-width: 400px;
+  width: 100%;
+}
+
+.link-text {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  flex: none;
+}
+
+.footer {
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer > i {
+  color: aliceblue;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .custom-container {
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .profile > img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile > p {
+    font-size: 1.5em;
+  }
+
+  .link > a {
+    font-size: 18px;
+    padding: 8px;
+    margin: 5px auto;
+  }
+
+  .footer > i {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .link > a {
+    font-size: 22px;
+    padding: 12px;
+  }
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
